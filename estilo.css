@@ -19,5 +19,13 @@ body{
 
 }
 
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 15px;
+
+
+}
+
 
             
