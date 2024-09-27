@@ -5,7 +5,7 @@
         <title>
              Seguimiento de Pacientes
         </title>
-        <link rel="stylesheet"  href="estilo.css" 
+        <link rel="stylesheet"  href="estilo.css"  
 
     </head>
     <body>  
@@ -44,14 +44,27 @@
             </nav>
 
 
-            <form>
-                <label>Cedula</label>
-                <input type="text">
-    
-                <label>Nombre</label>
-                <input type="text">
+            <div id="informacion">
+                <select class="selector">
+                    <option value="Cedula">Cedula</option>
+                    <option value="Nombre">Nombre</option>
+                </select>
+                <input class="buscador" type="text">
+                
+                
             </form>
 
+
+            <nav id="informacion">
+                <ul>
+                    <li class="identidad">
+                        <p>cita</p>
+                        <p>Horario</p>
+                        <p>Paciente</p>
+                        <p>Fecha</p>
+                    </li>
+                </ul>
+            </nav>
 
 
             <section id="content">
