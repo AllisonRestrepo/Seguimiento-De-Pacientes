@@ -2,6 +2,7 @@
 header {
   background-color: teal;
   padding: 10px; 
+  color: #ffffff;
 }
 .header-content {
   display: flex; 
@@ -12,27 +13,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 0px; /* lo dejo por si les gustaria poner margen*/
   background-color: teal;
-  padding: 10px 20px;
+  padding:25px 20px;
 }
 .nav-list {
   list-style-type: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   align-items:center;
 }
 /*////////////////////////////////////////////////////*/
 .search-bar {
-  padding: 5px;
-  padding-right: 70px;
+  padding: 6px;
+  padding-right: 150px;
   border-radius: 5px;
   border: 1px solid #c0c0c0;
 }
 .tab {
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #d1d1d1;
+  background-color: #86e09b;
   color: black;
   border-radius: 50px;
   transition: background-color 0.3s;
@@ -55,6 +56,39 @@ header {
   border-radius: 50%; 
 }
 /*////////////////////////////////////////////////////*/
+.table-style {
+  width: 100%; /* Que la tabla ocupe todo el ancho */
+  margin: 10px; /* Margen alrededor de la tabla */
+  border: 3px solid #333;
+  background-color: #e7e7e7;
+  color: #333;
+  font-family: sans-serif;
+  box-sizing: border-box; /* Para que el margen no altere el tamaño del contenedor */
+}
+
+.table-style table {
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho */
+  border-collapse: collapse; /* Elimina los espacios entre bordes */
+}
+
+.table-style table th {
+  background-color: teal;
+  color: #ffffff;
+}
+
+.table-style table th,
+.table-style table td {
+  border: 1px solid #333; /* Define un borde delgado entre celdas */
+  padding: 12px; /* Controla el padding dentro de las celdas */
+}
+
+.center {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: calc(100vh - [header-height]); /* Ocupa el espacio bajo el header */
+}
+/*////////////////////////////////////////////////////*/
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +102,6 @@ section {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: url(https://i.pinimg.com/564x/a1/eb/3c/a1eb3ca27495e2bb7fceefa553f50360.jpg)
-    no-repeat;
   background-size: cover;
   background-position: center;
 }
