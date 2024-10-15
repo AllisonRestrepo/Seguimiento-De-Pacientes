@@ -22,10 +22,17 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    height: 70px;
+    background-color: darkgrey;
     align-items: center;
     margin-bottom: 20px;
 }
-
+.logo {
+    display: flex;
+}
+.logo img{
+    height: 50px;
+}
 header h1 {
     font-size: 1.5em;
     color: #333;
