@@ -3,10 +3,12 @@ header {
   background-color: teal;
   padding: 10px; 
   color: #ffffff;
+  flex-wrap: wrap;
 }
 .header-content {
   display: flex; 
   align-items: center; 
+  flex-wrap: wrap;
 }
 /*////////////////////////////////////////////////////*/
 .nav {
@@ -16,12 +18,14 @@ header {
   margin-bottom: 0px; /* lo dejo por si les gustaria poner margen*/
   background-color: teal;
   padding:25px 20px;
+  flex-wrap: wrap;
 }
 .nav-list {
   list-style-type: none;
   display: flex;
   gap: 20px;
   align-items:center;
+  flex-wrap: wrap;
 }
 /*////////////////////////////////////////////////////*/
 .search-bar {
@@ -58,7 +62,7 @@ header {
 /*////////////////////////////////////////////////////*/
 .table-style {
   width: 100%; /* Que la tabla ocupe todo el ancho */
-  margin: 10px; /* Margen alrededor de la tabla */
+  margin: 10px;
   border: 3px solid #333;
   background-color: #e7e7e7;
   color: #333;
@@ -67,8 +71,8 @@ header {
 }
 
 .table-style table {
-  width: 100%; /* Asegura que la tabla ocupe todo el ancho */
-  border-collapse: collapse; /* Elimina los espacios entre bordes */
+  width: 100%; /* para que la tabla ocupe toda la parte de abajo del header */
+  border-collapse: collapse; /* para quitar los espacios entre bordes  */
 }
 
 .table-style table th {
@@ -78,15 +82,47 @@ header {
 
 .table-style table th,
 .table-style table td {
-  border: 1px solid #333; /* Define un borde delgado entre celdas */
-  padding: 12px; /* Controla el padding dentro de las celdas */
+  border: 1px solid #333;
+  padding: 12px; /* el padding de las celdas */
 }
 
 .center {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: calc(100vh - [header-height]); /* Ocupa el espacio bajo el header */
+}
+/*////////////////////////////////////////////////////*/
+@media (max-width: 768px) { /*si la pantalla es igual o menos a este valor, cambiar los valores de la pagina por esto */
+  .logo img {
+    height: 60px; 
+    width: 60px;
+  }
+  .nav-list {
+    flex-direction: column; 
+    gap: 30px; 
+  }
+  .search-bar {
+    padding: 6px;
+    padding-right: 80px; 
+  }
+}
+@media (max-width: 480px) { /*es para tipo tamano celular */
+  .logo img {
+    height: 50px; 
+    width: 50px;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 15px; 
+  }
+  header {
+    flex-direction: column; 
+    padding: 10px;
+  }
+  .search-bar {
+    padding: 6px;
+    padding-right: 50px; 
+  }
 }
 /*////////////////////////////////////////////////////*/
 * {
