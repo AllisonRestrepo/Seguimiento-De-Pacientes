@@ -58,7 +58,7 @@ header {
 /*////////////////////////////////////////////////////*/
 .table-style {
   width: 100%; /* Que la tabla ocupe todo el ancho */
-  margin: 10px; /* Margen alrededor de la tabla */
+  margin: 10px; 
   border: 3px solid #333;
   background-color: #e7e7e7;
   color: #333;
@@ -67,7 +67,7 @@ header {
 }
 
 .table-style table {
-  width: 100%; /* Asegura que la tabla ocupe todo el ancho */
+  width: 100%; /* para que la tabla ocupe todo el ancho */
   border-collapse: collapse; /* Elimina los espacios entre bordes */
 }
 
@@ -78,15 +78,14 @@ header {
 
 .table-style table th,
 .table-style table td {
-  border: 1px solid #333; /* Define un borde delgado entre celdas */
-  padding: 12px; /* Controla el padding dentro de las celdas */
+  border: 1px solid #333;
+  padding: 12px; /* el padding de las celdas*/
 }
 
 .center {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: calc(100vh - [header-height]); /* Ocupa el espacio bajo el header */
 }
 /*////////////////////////////////////////////////////*/
 * {
