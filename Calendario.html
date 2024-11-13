@@ -1,63 +1,100 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>
-             Seguimiento de Pacientes
-        </title>
-        
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <h1>Seguimiento </h1> 
-            </header>
-            
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="Pacientes.html">
-                            Pacientes
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="Calendario.html">
-                            Calendario
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\CSS\calendario_css.css">
+    <title>Calendario</title>
+</head>
 
+<body>
+    <div class="cabeza">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Venice.jpg" alt="logo" class="circular-image">
+                </div>
+                <h1>Seguimiento de Pacientes</h1>
+            </div>
+        </header>        
+        <div class="nav">
+            <input type="text" placeholder="Buscar..." class="search-bar">
+            <ul class="nav-list">
+                <li><a href="#" class="tab">Citas</a></li>
+                <li><a href="#" class="tab">Pacientes</a></li>
+                <li><a href="#" class="tab">Calendario</a></li>
+            </ul>
+        </div>
+    </div>
+    
 
-            <p>
-                Calendario
-            </p>
-
-            
-
-
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h1>Enero</h1>
+            <p>2024</p>
         </div>
 
-    </body>
+        <div class="calendar">
+            <span class="day-name">Lun</span>
+            <span class="day-name">Mar</span>
+            <span class="day-name">Mie</span>
+            <span class="day-name">Jue</span>
+            <span class="day-name">Vie</span>
+            <span class="day-name">Sab</span>
+            <span class="day-name">Dom</span>
+
+            <div class="day day-disabled">27</div>
+            <div class="day day-disabled">28</div>
+            <div class="day day-disabled">29</div>
+            <div class="day day-disabled">30</div>
+            <div class="day day-disabled">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+            <div class="day day-disabled">1</div>
+            <div class="day day-disabled">2</div>
+            <div class="day day-disabled">3</div>
+            <div class="day day-disabled">4</div>
+            <div class="day day-disabled">5</div>
+            <div class="day day-disabled">6</div>
+
+            <section class="task task-html">Aprender HTML</section>
+            <section class="task task-css">Aprender CSS</section>
+            <section class="task task-javascript">Aprender JavaScript</section>
+        </div>
 
 
+    </div>
 
-
-
-
-<footer>Todos los derechos reservados 2024</footer>
+    
+    
+</body>
 </html>
