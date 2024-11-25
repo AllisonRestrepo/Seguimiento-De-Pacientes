@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://i.pinimg.com/736x/d2/0b/dd/d20bddadc31f459bd8a9b08f7d4664ad.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.open-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.open-buttons a {
+    background-color: #000000;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.open-buttons a:hover {
+    background-color: #a09d9d;
+}
+
+.dashboard {
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}
+
+.dashboard .options {
+    margin: 20px 0;
+}
+
+.dashboard .options button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #0084ff;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.dashboard .options button:hover {
+    background-color: #0751b3;
+}
+
+#content {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 400px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.form-container input {
+    margin-bottom: 15px;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #0077ff;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #0178ffa1;
+}

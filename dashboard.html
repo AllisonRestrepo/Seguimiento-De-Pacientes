@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section>
+        <div class="dashboard">
+            <h1>Bienvenido al Sistema de Monitoreo de Salud</h1>
+            <div id="userRole"></div>
+            <div class="options">
+                <button onclick="showPatients()">Gestión de Pacientes</button>
+                <button onclick="showAppointments()">Gestión de Citas</button>
+                <button onclick="showReminders()">Recordatorios</button>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </div>
+            <div id="content"></div>
+            <!-- Formularios dinámicos -->
+            <div id="dynamicForm" class="form-container" style="display: none;">
+                <form id="form">
+                    <h2 id="formTitle"></h2>
+                    <div id="formFields"></div>
+                    <button type="submit">Guardar</button>
+                </form>
+                <button onclick="closeForm()">Cancelar</button>
+            </div>
+        </div>
+    </section>
+    <script src="./js/dashboard.js" type="module"></script>
+</body>
+</html>
